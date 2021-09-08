@@ -4,6 +4,10 @@
 What kind of Linux are you running?
 ---
 
+```bash
+uname -a
+```
+
 Ask the kernel and the pseudo file system:
 ```bash
 cat /proc/version
@@ -35,6 +39,17 @@ dmesg | head
 
 Example outputs:
 ---
+```
+$ uname -a
+Linux vagrant 5.4.0-77-generic #86-Ubuntu SMP Thu Jun 17 02:35:03 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+```
+
+```
+$ cat /proc/version
+Linux version 5.4.0-77-generic (buildd@lgw01-amd64-028) (gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)) #86-Ubuntu SMP Thu Jun 17 02:35:03 UTC 2021
+$ 
+```
+
 ```
 $ls /etc/*release*
 /etc/lsb-release  /etc/os-release
@@ -107,12 +122,6 @@ $ dmesg | head
 [    0.000000]   zhaoxin   Shanghai  
 [    0.000000] Disabled fast string operations
 [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
-$ 
-```
-
-```
-$ cat /proc/version
-Linux version 5.4.0-77-generic (buildd@lgw01-amd64-028) (gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)) #86-Ubuntu SMP Thu Jun 17 02:35:03 UTC 2021
 $ 
 ```
 
