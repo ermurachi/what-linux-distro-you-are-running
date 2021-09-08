@@ -1,4 +1,4 @@
-# How to check what linux distribution are you running
+# How to check what linux distribution you are running
 
 
 What Kind of Linux are you running?
