@@ -3,9 +3,15 @@
 
 What Kind of Linux are you running?
 ---
+
+Ask the kernel and the pseudo file system:
+```bash
+cat /proc/version
+```
+
 View Release files:
 ```bash
-$ ls /etc/*release*
+ls /etc/*release*
 ```
 
 View the Issue Files:
@@ -21,6 +27,10 @@ lsb_release -a
 SystemD system:
 ```bash
 hostnamectl
+```
+Boot time messages
+```bash
+dmesg | head
 ```
 
 Example outputs:
@@ -85,6 +95,24 @@ $ hostnamectl
 $
 ```
 
+```
+$ dmesg | head
+[    0.000000] Linux version 5.4.0-77-generic (buildd@lgw01-amd64-028) (gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)) #86-Ubuntu SMP Thu Jun 17 02:35:03 UTC 2021 (Ubuntu 5.4.0-77.86-generic 5.4.119)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-77-generic root=/dev/mapper/vgvagrant-root ro net.ifnames=0 biosdevname=0 quiet
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] Disabled fast string operations
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+$ 
+```
 
-
+```
+$ cat /proc/version
+Linux version 5.4.0-77-generic (buildd@lgw01-amd64-028) (gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)) #86-Ubuntu SMP Thu Jun 17 02:35:03 UTC 2021
+$ 
+```
 
