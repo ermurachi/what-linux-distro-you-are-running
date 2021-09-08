@@ -1,7 +1,7 @@
-# How to check what linux distribution you are running
+# How to check what linux distribution is running
 
 
-What Kind of Linux are you running?
+What kind of Linux are you running?
 ---
 
 Ask the kernel and the pseudo file system:
