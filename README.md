@@ -1,4 +1,4 @@
-# Linux-LPI-essentials
+# How to check what linux distribution are you running
 
 
 What Kind of Linux are you running?
