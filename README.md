@@ -22,8 +22,10 @@ Ubuntu specific use lsb_release utilility:
 lsb_release -a
 ```
 
-
-
+SystemD system:
+```bash
+hostnamectl
+```
 
 
 
